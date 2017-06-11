@@ -1,12 +1,26 @@
-locale: "en-US"
-title: "EphingAdmin"
-title_separator: "-"
-name: "Ryan Ephgrave"
-description: "PowerShell tips and tricks"
-#url:"https://ephingadmin.com"
-gh_repo: "http://www.github.com/Ryan2065"
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-words_per_minute: 200
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
+# Setup
+title:            EphingAdmin
+tagline:          'A Jekyll theme'
+description:      'Tips and Tricks for Windows Admins'
+url:              https://ephingadmin.com
+baseurl:          /
 
-theme: jekyll-theme-slate
+author:
+  name:           'Ryan Ephgrave'
+  url:            https://ephingadmin.com
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/ryan2065
