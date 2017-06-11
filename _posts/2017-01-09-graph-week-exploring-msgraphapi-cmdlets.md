@@ -3,7 +3,7 @@ id: 735
 title: 'Graph Week &#8211; Exploring the MSGraphAPI Cmdlets'
 date: 2017-01-09T12:00:03+00:00
 author: ryan2065@gmail.com
-layout: post
+layout: single
 guid: http://www.ephingadmin.com/?p=735
 permalink: /graph-week-exploring-msgraphapi-cmdlets/
 categories:
