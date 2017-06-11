@@ -8,9 +8,10 @@ relative_permalinks: true
 
 # Setup
 title:            EphingAdmin
-tagline:          'A Jekyll theme'
+tagline:          'PowerShell tips and tricks'
 description:      'Tips and Tricks for Windows Admins'
-url:              https://ephingadmin.com
+#url:              https://ephingadmin.com
+url:              https://ryan2065.github.io/
 baseurl:          /
 
 author:
@@ -23,4 +24,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/ryan2065
+  repo:           https://github.com/Ryan2065/Ryan2065.github.io
