@@ -14,7 +14,7 @@ description              : "Tips and Tricks for Windows Admins"
 url                      : "https://Ryan2065.github.io"
 baseurl                  : #
 repository               : "https://github.com/Ryan2065/Ryan2065.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/EphingAdmin.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
