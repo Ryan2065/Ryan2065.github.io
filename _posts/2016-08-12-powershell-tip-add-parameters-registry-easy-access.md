@@ -40,6 +40,9 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Add("Run In New Window", {
 },"ALT+F5") | out-Null
 ```
 
+`​`` html
+<a href="#">Hello world</a>
+`​``
 
 I ended up deciding to store these variables in the registry. I post a lot of my projects to GitHub and didn’t want a file full of variables in my Git repo. So I went to my registry and created a new Key under HKCU:\Software called EphingParams. I then need a way to tell it what script I’m using. The current project I’m working on has a lot of scripts in the same directory all using a similar set of parameters. So I created a key with the name of the folder “ConfigMgr_Console_Extensions”
 
