@@ -1,1 +1,29 @@
+locale: "en-US"
+title: "EphingAdmin"
+title_separator: "-"
+name: "Ryan Ephgrave"
+description: "PowerShell tips and tricks"
+#url:"https://ephingadmin.com"
+gh_repo: "http://www.github.com/Ryan2065"
+
+words_per_minute: 200
+
+comments:
+  provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
+  disqus:
+    shortname            : "ephingadmin"
+
+defaults:
+  -
+    scope:
+      path: ""
+      #type: posts
+    values:
+      layout: single
+      read_time: true
+      #author_profile: true
+      #share: true
+      comments: true
+      #related: true
+    
 theme: jekyll-theme-slate
