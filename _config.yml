@@ -12,6 +12,11 @@ comments:
   provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
     shortname            : "ephingadmin"
+  facebook:
+    
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
 
 defaults:
   -
