@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "Ryan Ephgrave"
 description              : "Tips and Tricks for Windows Admins"
 url                      : "https://Ryan2065.github.io"
-baseurl                  : /
+baseurl                  : #
 repository               : "https://github.com/Ryan2065/Ryan2065.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -77,7 +77,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ryan EPhgrave"
+  name             : "Ryan Ephgrave"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Enterprise Mobility MVP"
   location         : "Minneapolis, MN"
