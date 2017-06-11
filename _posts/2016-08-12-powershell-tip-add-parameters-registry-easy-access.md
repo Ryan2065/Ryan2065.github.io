@@ -20,7 +20,7 @@ I’m already using my <a href="http://www.ephingadmin.com/run-wpf-powershell-sc
 First off, I only care to do this for saved scripts, so I only have to edit the “else” statement in my ISE addon:
 
  
-`​``powershell
+{% highlight powershell linenos %}
 $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Add("Run In New Window", {
     If ($psISE.CurrentFile.IsUntitled) {
         $ScriptBlock = $psISE.CurrentFile.Editor.Text
@@ -38,7 +38,7 @@ $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus.Add("Run In New Window", {
         Start-Process Powershell.exe -Wait -ArgumentList "-noexit","-ExecutionPolicy Bypass","-file `"$CurrentFilePath`""
     }
 },"ALT+F5") | out-Null
-```
+{% endhighlight %}
 
 
 I ended up deciding to store these variables in the registry. I post a lot of my projects to GitHub and didn’t want a file full of variables in my Git repo. So I went to my registry and created a new Key under HKCU:\Software called EphingParams. I then need a way to tell it what script I’m using. The current project I’m working on has a lot of scripts in the same directory all using a similar set of parameters. So I created a key with the name of the folder “ConfigMgr_Console_Extensions”
