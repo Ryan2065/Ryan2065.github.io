@@ -14,7 +14,7 @@ description              : "Tips and Tricks for Windows Admins"
 url                      : "http://www.ephingadmin.com"
 baseurl                  : #
 repository               : "https://github.com/Ryan2065/Ryan2065.github.io"
-teaser                   : "/assets/images/EphingAdmin.png"
+teaser                   : #"/assets/images/EphingAdmin.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
