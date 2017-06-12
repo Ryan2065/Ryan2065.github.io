@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .masthead {
-  background: url(images/site/EphingAdmin.png);
   position: relative;
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
@@ -75,4 +74,10 @@
     padding-right: 2em;
     font-weight: 700;
   }
+}
+
+.TitleBanner {
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/site/EphingAdmin.png);
 }
