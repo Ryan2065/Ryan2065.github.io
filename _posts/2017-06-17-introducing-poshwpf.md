@@ -19,21 +19,24 @@ module to make this process easier!
 
 To install this module, simply run the code:
 
-```PowerShell
+{% highlight powershell linenos %}
 Install-Module PoshWPF
-```
+{% endhighlight %}
 
 If you want to display a WPF window, design it in Visual Studio (use Community 
 Edition if you don't want to pay) and run the command:
 
-```PowerShell
+{% highlight powershell linenos %}
+
 New-WPFWindow -xaml $xaml
-```
+
+{% endhighlight %}
 
 This will open the UI in a separate thread which will allow you to interact with it 
 at the PowerShell prompt.  Here's a complete working example:
 
-```PowerShell
+{% highlight powershell linenos %}
+
 Import-Module PoshWPF
 $xaml = @'
 <Window x:Class="WpfApp1.MainWindow"
@@ -54,7 +57,7 @@ $xaml = @'
 
 New-WPFWindow -xaml $xaml
 
-```
+{% endhighlight %}
 
 ![New-WPFWindow](\images\2017-6-17\New-WPFWindow.jpg)
 
@@ -64,26 +67,26 @@ The module will do that for you!
 You'll be able to interact with any named objects through the PowerShell prompt. 
 If you want to view the properties of an object, simply run the command:
 
-```PowerShell
+{% highlight powershell linenos %}
 Get-WPFControl -ControlName 'Button'
-```
+{% endhighlight %}
 
 And you'll be given a hash of the properties. You are not returned the object, 
 because if you try to edit it from another thread everything will crash. 
 
 If you would like to edit one of the controls, simply run the command:
 
-```PowerShell
+{% highlight powershell linenos %}
 Set-WPFControl -ControlName 'Button' -PropertyName 'Content' -Value 'NewValue'
-```
+{% endhighlight %}
 
 ![ChangeButtonValue](\images\2017-6-17\ChangeButtonValue.jpg)
 
 If you want to subscribe to an event in the window, use the command:
 
-```PowerShell
+{% highlight powershell linenos %}
 New-WPFEvent -ControlName 'Button' -EventName 'Click' -Action { Write-Host 'Clicked!' }
-```
+{% endhighlight %}
 
 When you click the button you'll now see 'Clicked' in your host!
 
@@ -92,9 +95,9 @@ When you click the button you'll now see 'Clicked' in your host!
 Lastly, if you'd like to do something more advanced in your UI window, you can 
 use the command:
 
-```PowerShell
+{% highlight powershell linenos %}
 Invoke-WPFAction -Action { $Global:PoshWPFHashTable.WindowControls.Window_TextBox.Text = 'My New Text!!!' }
-```
+{% endhighlight %}
 
 This command will add new text to the textbox! I could have done that with 
 Set-WPFControl, but I wanted to show how you could interact with the UI in the 
