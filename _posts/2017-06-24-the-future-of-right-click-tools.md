@@ -71,4 +71,4 @@ In 15 seconds, my Windows 10 computers restarted! This means it took 5 seconds f
 
 Right click tools are finally in SCCM!
 
-![Yay](https://media.giphy.com/media/f2fX7GtXh1nbi/giphy.gif)
+![Yay](https://media.giphy.com/media/l41YdHuqqelb9NJe0/giphy.gif)
