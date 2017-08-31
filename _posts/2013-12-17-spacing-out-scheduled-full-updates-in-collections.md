@@ -27,9 +27,10 @@ $RefreshType: Set it to 2 if you want incremental updates off, or 6 if you want 
 
 Script:
  
-<pre class="lang:ps decode:true " >&lt;#
+{% highlight powershell linenos %}
+<#
 By Ryan Ephgrave
-#&gt;
+#>
 $CollectionName = "%"   #Use % for a wildcard - If it's only % it will change all collections
 $ServerName = "CM12"	#ConfigMgr Server
 $SiteCode = "PS1"		#Site Code
@@ -55,3 +56,4 @@ Foreach ($Collection in $Collections) {
 	    $Collection.Put()
     }
 }</pre> 
+{% endhighlight %}
