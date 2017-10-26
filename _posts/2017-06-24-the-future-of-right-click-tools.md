@@ -41,7 +41,7 @@ In the console, go to Software -> Scripts, right click and choose Create Script
 
 Name the script and copy it into the script window:
 
-![NameScript](\images\2017-6-24\NameScript.jpg)
+![NameScript](..\images\2017-6-24\NameScript.jpg)
 
 Click Next -> Next -> Finish.  Now we have a script, what do we do with it? 
 
@@ -51,21 +51,21 @@ in the future! You can configure approvals so the author cannot approve their wo
 
 If you just installed this TP, you should have permissions to approve the script. In the upper right, click Approve/Deny:
 
-![ApproveDeny](\images\2017-6-24\ApproveDeny.jpg)
+![ApproveDeny](..\images\2017-6-24\ApproveDeny.jpg)
 
 In the wizard, make sure you select Approve:
 
-![Approve](\images\2017-6-24\Approve.jpg)
+![Approve](..\images\2017-6-24\Approve.jpg)
 
 Now that the scirpt is approved, we can run it on demand on remote machines. How cool is that?
 
 Go to Assets and Compliance, click on Device Collections, Right click on a collection you want to run this on, and select "Run Script"
 
-![RunScript](\images\2017-6-24\RunScript.jpg)
+![RunScript](..\images\2017-6-24\RunScript.jpg)
 
 Now, select the Reboot Computer script, and Next -> Next -> Finish:
 
-![RunScript2](\images\2017-6-24\RunScript2.jpg)
+![RunScript2](..\images\2017-6-24\RunScript2.jpg)
 
 In 15 seconds, my Windows 10 computers restarted! This means it took 5 seconds for the computer to get the new policy and run the script!
 
