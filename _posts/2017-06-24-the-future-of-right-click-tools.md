@@ -37,7 +37,7 @@ shutdown /r /t 10 /f
 
 In the console, go to Software -> Scripts, right click and choose Create Script
 
-![CreateScript](\images\2017-6-24\CreateScript.jpg)
+![CreateScript](..\images\2017-6-24\CreateScript.jpg)
 
 Name the script and copy it into the script window:
 
