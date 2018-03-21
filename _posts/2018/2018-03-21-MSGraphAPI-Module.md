@@ -5,7 +5,7 @@ date: 2018-03-21T01:10:39+00:00
 author: ryan2065@gmail.com
 layout: post
 guid: http://www.ephingadmin.com/?p=712
-permalink: /2018-03-21-MSGraphAPI-Module/
+permalink: /MSGraphAPI-Module/
 categories:
   - PowerShell
   - Graph
