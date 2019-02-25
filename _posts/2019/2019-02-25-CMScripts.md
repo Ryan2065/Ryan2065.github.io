@@ -16,3 +16,9 @@ hidden: true
     * Speed
     * Ease of use
     * Security
+
+---
+
+# CM Scripts Gotchas
+
+1. Can't use " in parameter text
