@@ -5,7 +5,7 @@ permalink: /cmscripts-presentation/
 hidden: true
 ---
 class: center, middle
-background-image: url(https://www.ephingadmin.com/images/site/EphingAdmin.png)
+background-image: url(https://www.ephingadmin.com/images/site/EphingAdmin.png);
 background-position: top;
 background-repeat: no-repeat;
 background-size: contain;
