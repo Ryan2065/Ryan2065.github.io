@@ -33,9 +33,9 @@ name: gotchas
     * Can be fixed with this regex:
 --
 
-```regex
-^[^"]*$
-```
+    ```regex
+    ^[^"]*$
+    ```
 
 --
 
