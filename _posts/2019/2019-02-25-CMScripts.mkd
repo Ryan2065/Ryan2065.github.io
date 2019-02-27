@@ -5,6 +5,7 @@ permalink: /cmscripts-presentation/
 hidden: true
 ---
 class: center, middle
+![logo](https://www.ephingadmin.com/images/site/EphingAdmin.png)
 # CM Scripts
 
 ## Ryan Ephgrave
