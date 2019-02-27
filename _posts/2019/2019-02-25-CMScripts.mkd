@@ -39,11 +39,15 @@ name: gotchas
 --
 
 * Script will run as system context
-    * "Domain Computers" will need permissions to anything off box
+    * "Domain Computers" will need permissions to anything off box  
+
 --
-* Can't edit a script right now (but can in the most recent TP)
+
+* Can't edit a script right now (but can in the most recent TP)  
+
 --
-* Only string, int, and list parameter types are allowed
+
+* Only string, int, and list parameter types are allowed  
 
 ---
 
