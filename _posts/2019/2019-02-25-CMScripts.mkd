@@ -24,9 +24,13 @@ class: center, middle
     * Security  
 
 ---
-name: gotchas
+class: center, middle
 
-# CM Scripts Gotchas
+# Demo: Start Stop Service
+
+---
+
+# CM Scripts Authoring Notes
 
 * Can't use " in parameter text
     * Can be fixed with this regex:
@@ -51,6 +55,12 @@ name: gotchas
 
 ---
 
+class: center, middle
+
+# Demo: Run a script
+
+---
+
 # Additional Notes
 
 * The maintenance task "Delete Aged client operation" removes script run data  
@@ -72,3 +82,13 @@ name: gotchas
     * Runner  
     * Approver  
     * Author  
+
+---
+class: center, middle
+
+# Demo: Log Gather
+
+---
+class: center, middle
+
+# Demo: SQL Reporting
