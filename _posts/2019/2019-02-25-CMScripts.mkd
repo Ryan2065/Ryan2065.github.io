@@ -53,10 +53,11 @@ name: gotchas
 
 # Additional Notes
 
-1. The maintenance task "Delete Aged client operation" removes script run data  
+* The maintenance task "Delete Aged client operation" removes script run data  
+
 --
 
-2. Log Files:  
+* Log Files:  
     * Server Side:  
         * BgbServer.log  
     * Client Side:  
@@ -64,10 +65,10 @@ name: gotchas
         * Script.log  
 --
 
-3. Can restrict who can run scripts with Scopes  
+* Can restrict who can run scripts with Scopes  
 --
 
-4. Can separate out Script roles into these:  
+* Can separate out Script roles into these:  
     * Runner  
     * Approver  
     * Author  
