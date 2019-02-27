@@ -15,9 +15,10 @@ class: center, middle
 
 # CM Scripts - Why
 
-1. CM Scripts came from the MVP Hackathon
+* CM Scripts came from the MVP Hackathon
 --
-1. Allow users to create their own right click tools with these points in mind:
+
+* Allow users to create their own right click tools with these points in mind:
     * Speed
     * Ease of use
     * Security
@@ -27,7 +28,7 @@ name: gotchas
 
 # CM Scripts Gotchas
 
-1. Can't use " in parameter text
+* Can't use " in parameter text
     * Can be fixed with this regex:
 --
 
@@ -37,13 +38,12 @@ name: gotchas
 
 --
 
-2. Script will run as system context
+* Script will run as system context
     * "Domain Computers" will need permissions to anything off box
 --
-3. Can't edit a script right now (but can in the most recent TP)
-    * Doesn't seem horrible, but the more you use it the more annoying it is...
+* Can't edit a script right now (but can in the most recent TP)
 --
-4. Only string, int, and list parameter types are allowed
+* Only string, int, and list parameter types are allowed
 
 ---
 
