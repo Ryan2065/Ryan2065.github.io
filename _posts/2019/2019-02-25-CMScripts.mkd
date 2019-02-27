@@ -6,8 +6,7 @@ hidden: true
 ---
 class: center, middle
 background-image: url(https://www.ephingadmin.com/images/site/EphingAdmin.png)
-background-position: center;
-background-repeat: no-repeat;
+
 background-size: contain;
 
 # CM Scripts
