@@ -4,9 +4,6 @@ title: CM Scripts Presentation
 permalink: /cmscripts-presentation/
 hidden: true
 ---
-background-position: top;
-background-repeat: no-repeat;
-background-size: contain;
 background-image: url(https://www.ephingadmin.com/images/site/EphingAdmin.png);
 
 .center[.middle[
