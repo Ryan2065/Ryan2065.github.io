@@ -5,7 +5,11 @@ permalink: /cmscripts-presentation/
 hidden: true
 ---
 class: center, middle
-![logo](https://www.ephingadmin.com/images/site/EphingAdmin.png)
+background-image: url(https://www.ephingadmin.com/images/site/EphingAdmin.png)
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+
 # CM Scripts
 
 ## Ryan Ephgrave
