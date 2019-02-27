@@ -11,6 +11,8 @@ class: center, middle
 ## Ryan Ephgrave
 
 ## @EphingPosh
+
+Wifi Code: msevent624mg
 ---
 
 # CM Scripts - Why
