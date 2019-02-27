@@ -4,17 +4,18 @@ title: CM Scripts Presentation
 permalink: /cmscripts-presentation/
 hidden: true
 ---
-background-image: url(https://www.ephingadmin.com/images/site/EphingAdmin.png);
 background-position: top;
 background-repeat: no-repeat;
 background-size: contain;
+background-image: url(https://www.ephingadmin.com/images/site/EphingAdmin.png);
 
-.center[# CM Scripts]
+.center[.middle[
+# CM Scripts
 
 ## Ryan Ephgrave
 
 ## @EphingPosh
-
+]]
 ---
 name: why
 
