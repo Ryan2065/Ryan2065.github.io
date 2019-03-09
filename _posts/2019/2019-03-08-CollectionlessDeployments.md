@@ -8,7 +8,6 @@ guid: http://www.ephingadmin.com/?p=714
 permalink: /CollectionlessDeployments/
 categories:
   - SCCM
-hidden: true
 ---
 
 # SCCM Collectionless* Deployments
