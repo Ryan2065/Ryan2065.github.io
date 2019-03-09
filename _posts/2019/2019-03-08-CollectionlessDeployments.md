@@ -1,7 +1,7 @@
 ---
 id: 714
 title: 'Collectionless Deployments'
-date: 2019-02-17
+date: 2019-03-08
 author: ryan2065@gmail.com
 layout: post
 guid: http://www.ephingadmin.com/?p=714
