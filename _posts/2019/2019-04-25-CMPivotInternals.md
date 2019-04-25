@@ -64,7 +64,7 @@ SELECT [ResourceID]
   ORDER BY LastUpdateTime DESC
 ```
 
-Now, I see results for all systems I queried! What's going on? In a CM Pivot query, the only thing *you* can send to clients to filter results client side is to the left of the first |. This means the filter "where (Device == 'DeviceName')" is only processed AFTER the results come in. If this query was run against "All Systems", every single system in your environment will run the CM Pivot query, send back the last 50 lines of the Scripts log file, put that in SQL, and then do nothing with it because the Device I wanted wasn't there.
+Now, I see results for all systems I queried! What's going on? In a CM Pivot query, the only thing *you* can send to clients to filter results client side is to the left of the first \|. This means the filter "where (Device == 'DeviceName')" is only processed AFTER the results come in. If this query was run against "All Systems", every single system in your environment will run the CM Pivot query, send back the last 50 lines of the Scripts log file, put that in SQL, and then do nothing with it because the Device I wanted wasn't there.
 
 Note, this isn't a dig at CM Pivot - it's understanding how the technology works so good decisions can be made.  Let's look at an example where this could give us potentially wrong information:
 
@@ -72,7 +72,7 @@ Note, this isn't a dig at CM Pivot - it's understanding how the technology works
 EventLog('System') | where Source == 'Iphlpsvc'
 ```
 
-In this query, I *think* I'm searching the event log of all my systems for the source 'Iphlpsvc'. But remember, only the pieces on the left of the first | get sent to the client, so what actually happens? Every client sends back the newest 50 records in the System Event Log, and then in SQL the results are filtered and displayed based only on the newest 50 records. So since the System Event log is much larger than 50 records, it's not a true search. I could very easily think this source isn't recorded in any device in my organization, but it could in fact be in all of them.
+In this query, I *think* I'm searching the event log of all my systems for the source 'Iphlpsvc'. But remember, only the pieces on the left of the first \| get sent to the client, so what actually happens? Every client sends back the newest 50 records in the System Event Log, and then in SQL the results are filtered and displayed based only on the newest 50 records. So since the System Event log is much larger than 50 records, it's not a true search. I could very easily think this source isn't recorded in any device in my organization, but it could in fact be in all of them.
 
 ### Data Layer
 
