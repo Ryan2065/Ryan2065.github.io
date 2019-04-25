@@ -52,7 +52,7 @@ CcmLog('Scripts') | where (Device == 'DeviceName') | order by DateTime desc | pr
 
 This query when run as-is will return no results. Why? You probably don't have a device named DeviceName in your organization. You'll see results like this:
 
-![NoResults](.\2019-04-25-13-58-13.png)
+![NoResults](..\images\2019\2019-04-25-13-58-13.png)
 
 If I query SQL with this query:
 
