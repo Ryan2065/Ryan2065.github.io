@@ -81,7 +81,7 @@ Now create start.ps1 and here's the contents of that file:
 
 ``` PowerShell
 Remove-Item C:\Windows\SMSCFG.INI -Force
-Remove-Item -Path 'HKLM:\SOFTWARE\Microsoft\SystemCertificates\SMS\Certificates\*' -force -ErrorAction SilentlyContinue
+Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\SystemCertificates\SMS\Certificates\*' | Remove-Item -Force
 
 Start-Service -Name 'ccmexec'
 
@@ -132,5 +132,6 @@ Once you do, they will be fully working CM Clients that respond to CM Pivot!
 
 ![DockerWorking](..\images\2019\2019-05-03-21-29-56.png)
 
-There is a slight bug right now where only one Docker container will reply to CM Pivot, the rest will show up as Clients and Active, just not respond to Pivot.  Once I figure that out I'll update the post. 
+<strike>There is a slight bug right now where only one Docker container will reply to CM Pivot, the rest will show up as Clients and Active, just not respond to Pivot.  Once I figure that out I'll update the post. </strike>
 
+Update 5/5/2019: All clients are now fully working. The code to remove certificates wasn't correct. It's updated now in this blog post and should work.
