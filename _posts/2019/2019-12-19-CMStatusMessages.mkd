@@ -123,3 +123,118 @@ IF %fileCount% gtr 5 (
 
 --
 
+![Math](https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif)
+
+--
+
+---
+
+# So how do I use these without killing CM?
+
+* Option: Use Math to verify you won't kill CM
+
+In every 1 minute there are 60 seconds and 60 minutes in an hour. This means there are 3,600 seconds in an hour.
+
+If my automation would run 1000 times in an hour, how quick does it have to run?
+
+--
+
+Answer: 3.6 seconds
+
+---
+
+# So how do I use these without killing CM?
+
+* Option: Use Math to verify you won't kill CM
+
+``` SQL
+WITH cte AS (
+    SELECT RecordId, [Time]
+    FROM vStatusMessages
+    WHERE
+        [Time] BETWEEN '2019-07-01' AND '2019-12-31'
+        AND MessageID IN (
+            30001
+            ,30004
+            ,30006
+            ,30007
+            ,30008
+            ,30016
+            ,30068
+            ,30152
+            ,30226
+            ,30227
+            ,30228
+        )
+);
+
+SELECT
+    DATEADD(Hour, DATEDIFF(Hour, 0 [Time]),0) AS 'Hour'
+    ,COUNT(RecordId) AS 'Count'
+FROM CTE
+GROUP BY DATEADD(Hour, DATEDIFF(Hour, 0 [Time]),0)
+ORDER BY COUNT(RecordId) DESC
+```
+
+---
+
+# So how do I use these without killing CM?
+
+* Option: Use Math to verify you won't kill CM
+
+
+RESULTS:
+
+| Hour | Count |
+| ---- | ------|
+|2019-07-22 21:00:00.000 | 1262 |
+|2019-10-07 22:00:00.000 | 1109 |
+|2019-07-11 22:00:00.000 | 627 |
+|2019-07-12 21:00:00.000 | 589 |
+|2019-07-26 13:00:00.000 | 389 |
+
+--
+
+Means:
+Script has to run in 2.9 seconds to always be quicker than the worst, but as long as it completes in 6.11 seconds it would have only backed up 3 times in the past 5 months.
+
+---
+
+# So how do I use these without killing CM?
+
+Putting both together:
+
+--
+
+If the multi-threading script takes 1 second to run and it can spin up 5 instances, the run time of your script is approximately 
+
+```
+(( RunTime ) / 5) + 1
+```
+
+--
+
+This means, in the previous example where the script had 2.9 seconds to run, using multi-threading it has:
+
+```
+(( RunTime ) / 5) + 1 = 2.6
+
+( RunTime ) / 5 = 1.6
+
+RunTime = 8
+```
+
+--
+
+```
+(( RunTime ) / 5) + 1 = 6.11
+
+( RunTime ) / 5 = 5.11
+
+RunTime = 25.55
+```
+
+---
+class: center, middle
+
+# Demo
