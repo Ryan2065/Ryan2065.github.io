@@ -89,6 +89,25 @@ https://blogs.technet.microsoft.com/saudm/2015/01/19/enumerating-status-message-
 
 ---
 
+# What can we automate?
+
+``` SQL
+WITH cte AS (
+    SELECT RecordId
+    FROM vStatusMessageAttributes
+    WHERE
+        AttributeTime BETWEEN '2019-07-01' AND '2019-12-31'
+        AND AttributeValue = 'PS100014'
+)
+SELECT
+    *
+FROM vStatusMessagesWithStrings
+WHERE RecordID IN ( SELECT RecordId FROM cte )
+order by Time desc
+```
+
+---
+
 # So how do I use these without killing CM?
 
 --
