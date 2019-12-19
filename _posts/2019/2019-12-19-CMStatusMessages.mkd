@@ -89,7 +89,7 @@ https://blogs.technet.microsoft.com/saudm/2015/01/19/enumerating-status-message-
 
 ---
 
-# So how do I use these without killing CM? (Wifi Code: msevent363hb)
+# So how do I use these without killing CM?
 
 --
 
@@ -153,20 +153,9 @@ WITH cte AS (
     WHERE
         [Time] BETWEEN '2019-07-01' AND '2019-12-31'
         AND MessageID IN (
-            30001
-            ,30004
-            ,30006
-            ,30007
-            ,30008
-            ,30016
-            ,30068
-            ,30152
-            ,30226
-            ,30227
-            ,30228
+            30001,30004,30006,30007,30008,30016,30068,30152,30226,30227,30228
         )
 )
-
 SELECT
     DATEADD(Hour, DATEDIFF(Hour, 0, [Time]),0) AS 'Hour'
     ,COUNT(RecordId) AS 'Count'
