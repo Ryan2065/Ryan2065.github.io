@@ -165,13 +165,13 @@ WITH cte AS (
             ,30227
             ,30228
         )
-);
+)
 
 SELECT
-    DATEADD(Hour, DATEDIFF(Hour, 0 [Time]),0) AS 'Hour'
+    DATEADD(Hour, DATEDIFF(Hour, 0, [Time]),0) AS 'Hour'
     ,COUNT(RecordId) AS 'Count'
-FROM CTE
-GROUP BY DATEADD(Hour, DATEDIFF(Hour, 0 [Time]),0)
+FROM cte
+GROUP BY DATEADD(Hour, DATEDIFF(Hour, 0, [Time]),0)
 ORDER BY COUNT(RecordId) DESC
 ```
 
