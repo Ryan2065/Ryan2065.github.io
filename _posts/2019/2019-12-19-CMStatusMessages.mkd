@@ -1,0 +1,114 @@
+---
+layout: presentation
+title: Status Message Presentation
+permalink: /CMStatusMessages-presentation/
+hidden: true
+---
+
+class: center, middle
+
+# Status Message Triggers
+
+## Ryan Ephgrave
+
+## @EphingPosh
+
+Wifi Code: msevent363hb
+---
+
+# Status Message Triggers
+
+### Pros
+  * Event-based automations (no polling the DB every minute)
+
+--
+
+  * Has been in SCCM, unchanged, for over a decade
+
+--
+
+  * You can use these to automate a ton surrounding OSD, Application Deployment, Software Updates, Process Enforcement, and Approvals
+
+--
+
+### Cons
+
+--
+
+  * Has been in SCCM, unchanged, for over a decade
+
+--
+
+  * Single-Threaded (like collections)
+
+--
+
+  * Has "quirks" with parameters
+
+--
+
+  * Only one program action per "type"
+
+---
+
+# What can we automate?
+
+--
+
+
+https://gallery.technet.microsoft.com/Enumerate-status-message-6e7e1761
+
+
+https://blogs.technet.microsoft.com/saudm/2015/01/19/enumerating-status-message-strings-in-powershell/
+
+--
+
+### Examples of status message events
+
+--
+
+* Task sequence step completes
+
+--
+
+* Task sequence completes
+
+--
+
+* Anything in CM created, edited, or deleted
+
+--
+
+* PXE boot happened on a DP
+
+--
+
+* Package installed
+
+---
+
+# So how do I use these without killing CM?
+
+--
+
+* Option: A poor man's multi-thread
+
+--
+
+```
+@echo off
+
+for %%F in (%1) do set filename=%%~nxF
+
+SET fileCount=0
+
+for /f "tokens=1,*" %%a in ('tasklist ^| find /I /C "%filename%"') do set fileCount=%%a
+
+for /f "tokens=1,* delims= " %%a in ("%*") do set ALL_BUT_FIRST=%%b
+
+IF %fileCount% gtr 5 (
+	%1 %ALL_BUT_FIRST%
+) ELSE (
+	start "" %1 %ALL_BUT_FIRST%
+)
+```
