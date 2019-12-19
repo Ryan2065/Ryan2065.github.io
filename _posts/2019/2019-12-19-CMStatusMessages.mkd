@@ -18,7 +18,7 @@ Wifi Code: msevent363hb
 Presentation At: https://EphingAdmin.com/CMStatusMessages-presentation
 ---
 
-# Status Message Triggers
+# Status Message Triggers (Wifi Code: msevent363hb)
 
 ### Pros
   * Event-based automations (no polling the DB every minute)
@@ -53,7 +53,7 @@ Presentation At: https://EphingAdmin.com/CMStatusMessages-presentation
 
 ---
 
-# What can we automate?
+# What can we automate? (Wifi Code: msevent363hb)
 
 --
 
@@ -89,7 +89,7 @@ https://blogs.technet.microsoft.com/saudm/2015/01/19/enumerating-status-message-
 
 ---
 
-# So how do I use these without killing CM?
+# So how do I use these without killing CM? (Wifi Code: msevent363hb)
 
 --
 
