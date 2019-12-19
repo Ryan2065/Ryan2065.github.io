@@ -14,6 +14,8 @@ class: center, middle
 ## @EphingPosh
 
 Wifi Code: msevent363hb
+
+Presentation At: https://EphingAdmin.com/CMStatusMessages-presentation
 ---
 
 # Status Message Triggers
@@ -55,12 +57,12 @@ Wifi Code: msevent363hb
 
 --
 
-
+```
 https://gallery.technet.microsoft.com/Enumerate-status-message-6e7e1761
-
-
+```
+```
 https://blogs.technet.microsoft.com/saudm/2015/01/19/enumerating-status-message-strings-in-powershell/
-
+```
 --
 
 ### Examples of status message events
@@ -112,3 +114,12 @@ IF %fileCount% gtr 5 (
 	start "" %1 %ALL_BUT_FIRST%
 )
 ```
+
+---
+
+# So how do I use these without killing CM?
+
+* Option: Use Math to verify you won't kill CM
+
+--
+
