@@ -138,7 +138,6 @@ In every 1 minute there are 60 seconds and 60 minutes in an hour. This means the
 If my automation would run 1000 times in an hour, how quick does it have to run?
 
 --
-
 Answer: 3.6 seconds
 
 ---
