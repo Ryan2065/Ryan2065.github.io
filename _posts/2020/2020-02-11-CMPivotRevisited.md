@@ -12,11 +12,9 @@ categories:
     - MEMCM
 ---
 
-{% include mermaid.html %}
-
 # CM Pivot Revisited
 
-``` mermaid
+<div class="mermaid">
 graph LR
 a-->b
-```
+<div>
