@@ -11,7 +11,9 @@ categories:
     - CMPivot
     - MEMCM
 ---
-    
+
+{% include mermaid.html %}
+
 # CM Pivot Revisited
 
 ``` mermaid
