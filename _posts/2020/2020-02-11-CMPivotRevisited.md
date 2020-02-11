@@ -12,8 +12,6 @@ categories:
     - MEMCM
 ---
 
-# CM Pivot Revisited
-
 I wanted to write a follow-up to my blog post [CMPivot Internals](https://www.ephingadmin.com/CMPivotInternals/) because in MEMCM 1910 CMPivot had a small, but huge change.
 
 Now, after 1910, CMPivot processes queries client-side instead of server side!
