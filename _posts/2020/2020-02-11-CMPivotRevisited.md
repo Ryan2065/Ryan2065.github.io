@@ -14,7 +14,6 @@ categories:
 
 # CM Pivot Revisited
 
-<div class="mermaid">
-graph LR
+<div class="mermaid">graph LR
 a-->b
 <div>
