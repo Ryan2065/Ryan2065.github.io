@@ -91,6 +91,8 @@ Here, we say if the Record is not complete, start the migration. After running t
 
 And that's it! We are now saving the job status to the database, so if we have to stop the job we can easily resume, or if there's some bug in our code and only 90% of collections migrated, we can fix the bug and only resume the 10% that didn't migrate!
 
+How cool was that? This blog showed you how to create a database, query, add, and modify data all without writing ANY SQL!
+
 You can see a [gist](https://gist.github.com/Ryan2065/436d851fc2d45d3804db7ca0d2057fa3) of the entire script here. I've included fake functions for the "Collection Migration" pieces. To follow with the blog, start on line 19.
 
 <script src="https://gist.github.com/Ryan2065/436d851fc2d45d3804db7ca0d2057fa3.js"></script>
