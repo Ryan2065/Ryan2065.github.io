@@ -53,15 +53,13 @@ Foreach($Collection in $CollectionsToMigrate) {
 }
 ```
 
-Now, first we want to pull up the record for this collection:
+First we want to pull up the record for this collection:
 
 ``` PowerShell
-    New-EFPoshQuery -DBContext $Context -Entity JobTracker
-    Add-EFPoshQuery -Property CollectionId -Equals $Collection.CollectionId
-    $Record = Start-EFPoshQuery -FirstOrDefault
+    $Record = Search-EFPosh -Entity $Context.JobTracker -Expression { $_.CollectionId -eq $Collection.CollectionId } -FirstOrDefault
 ```
 
-Entity Framework uses Linq to build queries, and EFPosh continues that. The first line tells EFPosh you want to create a new query against Table JobTracker. The second line tells it you want to search Column CollectionId and find any rows that equal $Collection.CollectionId. The last line tells EFPosh to run the query and only return the first result or $null if there are no results. Using EFPosh, you can build up your query with multiple Add-EFPoshQuery commands.
+Entity Framework uses Linq BinaryExpressions to build queries. PowerShell doesn't have a good interface for those, but they have BinaryExpressionAst objects, which are expressions found in Where-Object filters, if statements, etc. EFPosh will convert these to Linq binary expressions so you can write your expression in normal PowerShell and it's converted behind the scenes to what it needs to be. Above, we have to say what table we want to query against, then give it the expression we are looking for. Simple!
 
 After we get the record, we should look to see if it contains anything. If it did not find a record, create one to track progress:
 
