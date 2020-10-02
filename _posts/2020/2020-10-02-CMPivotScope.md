@@ -5,7 +5,7 @@ date: 2020-10-02
 author: ryan2065@gmail.com
 layout: post
 guid: http://www.ephingadmin.com/?p=723
-permalink: /EFPoshHowIUseIt/
+permalink: /CMPivotChangeScope/
 categories:
     - PowerShell
     - MEMCM
